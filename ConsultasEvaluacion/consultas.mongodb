@@ -1,0 +1,17 @@
+use('bd_evaluacion');
+
+// db.cliente.find();
+
+// 1. Obtener el nombre completo y correo electrónico de un cliente específico por su ID
+// db.cliente.findOne({_id: 1}, {nombre: 1, apellido: 1, correo: 1})
+
+
+// 2. Obtener el nombre y correo electrónico de todos los clientes que tienen un restaurante llamado "SAFARI"
+// db.cliente.find({"restauranteList.nombre": "SAFARI"}, {nombre:1})
+
+
+// 3. Obtener datos de las personas que su plato era de "HAMBURGUESA DOBLE QUESO"
+// db.cliente.find({"restauranteList.cartaList.platoList.nombrePlato": "HAMBURGUESA DOBLE QUESO"})
+
+// 4. Obtener los clientes que tienen el apellido "BACUILIMA":
+// db.cliente.find({apellido: "BACUILIMA"})
